@@ -3,4 +3,6 @@
 <p>Song Title: <%= @song.song_name %></p>
 <p>Genre: <%= @song.genre.capitalize %></p>
 <p>Duration of song: <%= @song.duration %></p>
-<p>Please use the following link to listen to the music on youtube: <%= link_to @song.song_url %></p>
+<%= video_tag @song.song_url, :controls => true %>
+</br>
+<%= link_to "[Delete]", song_path(@song.id), method: :delete, data: { confirm: "Are you sure?" } %>
