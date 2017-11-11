@@ -8,3 +8,9 @@
 
 artist1 = Artist.create!( { name: "Teddy Afro", age: 41, nationality: "Ethiopian", image_url: "https://tinyurl.com/y8xm78ec" } )
 artist2 = Artist.create!( { name: "Tilahul Gesese", age: 68, nationality: "Ethiopian", image_url: "https://tinyurl.com/y76dzfby" } )
+
+
+song1 = Song.create!( { genre: "hip hop", song_name: "Mar eske tuaf", duration: "5 min", song_url: "https://www.youtube.com/watch?v=u2inQ1WeaFs" } )
+song2 = Song.create!( { genre: "hip hop", song_name: "Etege", duration: "6 min", song_url: "https://www.youtube.com/watch?v=on_NrWN3xtc" } )
+song3 = Song.create!( { genre: "blues like", song_name: "Felige Asfelige", duration: "7 min", song_url: "https://www.youtube.com/watch?v=0Glt4jG-eQQ" } )
+song4 = Song.create!( { genre: "blues like", song_name: "Wub Aynama", duration: "6 min", song_url: "https://www.youtube.com/watch?v=IoIvS2ZsGhs" } )
