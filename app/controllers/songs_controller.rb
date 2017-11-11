@@ -10,6 +10,19 @@ class SongsController < ApplicationController
   end
 
   def new
+    @song = Song.new
+  end
+
+  def create
+     song_params = params.require(:song).permit(:genre, :song_name, :duration, :song_url)
+
+     @song = Song.new(song_params)
+
+     if @song.save
+        redirect_to @song
+     else
+        render 'new'
+     end
   end
 
   def delete

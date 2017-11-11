@@ -5,7 +5,6 @@ Rails.application.routes.draw do
 
   get 'artists/index'
   get 'artists/show'
-  get 'artists/new'
   get 'artists/delete'
 
   get 'songs/index'
@@ -20,6 +19,9 @@ Rails.application.routes.draw do
   get "songs" => "songs#index"
   get "artists/:id" => "artists#show", as: :artist
   get "songs/:id" => "songs#show", as: :song
+
+  post "songs" => "songs#create"
+
   delete "artists/:id" => "artists#destroy"
 
 
