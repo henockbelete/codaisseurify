@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
+
   get 'songs/index'
+  get 'artists/show'
+  get 'artists/new'
+  get 'artists/delete'
 
   get 'artists/index'
 
@@ -9,6 +13,16 @@ Rails.application.routes.draw do
 
   get "artists" => "artists#index"
   get "songs" => "songs#index"
+  get "artists/:id" => "artists#show", as: :artist
+
+
+
+
+
+
+
+
+
 
 
 end
