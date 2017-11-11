@@ -1,0 +1,6 @@
+<h1>Song Details</h1>
+
+<p>Song Title: <%= @song.song_name %></p>
+<p>Genre: <%= @song.genre.capitalize %></p>
+<p>Duration of song: <%= @song.duration %></p>
+<p>Please use the following link to listen to the music on youtube: <%= link_to @song.song_url %></p>
