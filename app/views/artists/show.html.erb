@@ -4,6 +4,18 @@
 <p>Nationality: <%= @artist.nationality %></p>
 <%= image_tag @artist.image_url %>
 
+<h4>List of Songs</h4>
+
+<% if @artist.songs.any? %>
+  <ul>
+    <% @artist.songs.each do |song| %>
+      <li><%= song.song_name %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>There are no songs of this Artist.</p>
+<% end %>
+<% link_to 'Back', artists_path %>
 <hr>
 
 <%= link_to "[Delete]", artist_path(@artist.id), method: :delete, data: { confirm: "Are you sure?" } %>
