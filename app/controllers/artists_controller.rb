@@ -8,8 +8,9 @@ class ArtistsController < ApplicationController
     @artist = Artist.find(params[:id])
   end
 
-  # def delete
-  # end
+  def delete
+    @artist = Artist.find(params[:id])
+  end
 
   def destroy
       @artist = Artist.find(params[:id])

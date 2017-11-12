@@ -1,3 +1,6 @@
+
+<%= link_to 'Back', artists_path %>
+
 <h1><%= @artist.name %></h1>
 
 <p>Age: <%= @artist.age %></p>
@@ -9,13 +12,14 @@
 <% if @artist.songs.any? %>
   <ul>
     <% @artist.songs.each do |song| %>
-      <li><%= song.song_name %></li>
+    <li><%= link_to song.song_name, :controller => :songs, :action => :show %></li>
     <% end %>
   </ul>
 <% else %>
   <p>There are no songs of this Artist.</p>
 <% end %>
-<% link_to 'Back', artists_path %>
+
 <hr>
 
+<%= link_to "[New Song]", :controller => :songs, :action => :new %>
 <%= link_to "[Delete]", artist_path(@artist.id), method: :delete, data: { confirm: "Are you sure?" } %>

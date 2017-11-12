@@ -1,6 +1,14 @@
+
+<% if !flash[:notice].blank? %>
+<div class="notice">
+  <%=flash[:notice] %>
+</div>
+<% end %>
+
 <h1> List of Songs </h1>
 <% @songs.each do |song| %>
 <p><%= link_to song.song_name, song_path(song.id) %></p>
 <% end %>
 
-<%= link_to "[New Song]", songs_new_path %>
+
+<!-- <%= link_to "Add New Song", new_song_path %> -->

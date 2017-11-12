@@ -1,4 +1,12 @@
+
+<% if !flash[:notice].blank? %>
+<div class="notice">
+  <%=flash[:notice] %>
+</div>
+<% end %>
+
 <h1>Song Details</h1>
+
 
 <p>Song Title: <%= @song.song_name %></p>
 <p>Genre: <%= @song.genre.capitalize %></p>
