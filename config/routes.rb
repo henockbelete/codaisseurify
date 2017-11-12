@@ -6,6 +6,11 @@ Rails.application.routes.draw do
   resources :artists
   resources :songs
 
+
+end
+
+
+
   # get 'artists/index'
   # get 'artists/show'
   # get 'artists/delete'
@@ -27,6 +32,3 @@ Rails.application.routes.draw do
   #
   # delete "artists/:id" => "artists#destroy"
   # delete "songs/:id" => "songs#destroy"
-
-
-end
