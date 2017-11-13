@@ -1,35 +1,38 @@
 class SongsController < ApplicationController
 
-
+    # before_action :set_artist, only: [:index, :show, :new]
+    # before_action :set_song, :only => [:new, :create]
   def index
     @songs = Song.all
+
   end
 
 
   def show
       @song = Song.find(params[:id])
+
   end
 
-  # def new
-  #   @song = @artist.songs.build
-  # end
+
 
   def new
       @song = Song.new
   end
 
   def create
-     @artist =Artist.find(params[:id])
-     @song = @artist.songs.build(params[:song])
+    @song = Song.new(song_params)
 
-     if @song.save
+    if @song.save
+      flash[:notice] = "Song created successfully."
+      redirect_to(page_path(@song))
 
-       flash[:notice] = "Song created successfully."
-        redirect_to artist_path(:id => @artist.id)
-     else
-        render 'new'
-     end
+
+    else
+      render('new')
+    end
   end
+
+
 
   def destroy
      @song = Song.find(params[:id])
@@ -39,11 +42,16 @@ class SongsController < ApplicationController
 
     private
 
+      # def set_artist
+      #    @artist = Artist.find(params[:id])
+      # end
+
       def song_params
         params
         .require(:song)
-        .permit(:genre, :song_name, :duration, :song_url)
+        .permit(:genre, :song_name, :duration, :song_url, :artist_id)
       end
+
   end
 
 #
