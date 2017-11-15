@@ -1,9 +1,5 @@
 
-<% if !flash[:notice].blank? %>
-<div class="notice">
-  <%=flash[:notice] %>
-</div>
-<% end %>
+
 
 <h1>Song Details</h1>
 
@@ -14,3 +10,4 @@
 <%= video_tag @song.song_url, :controls => true %>
 </br>
 <%= link_to "[Delete]", song_path(@song.id), method: :delete, data: { confirm: "Are you sure?" } %>
+<!-- <p>Artist ID : <%= @song.artist_id %></p>  -->

@@ -9,13 +9,9 @@ class ArtistsController < ApplicationController
   end
 
 
-  def delete
-    @artist = Artist.find(params[:id])
-  end
 
   def destroy
       @artist = Artist.find(params[:id])
-
       @artist.destroy
 
       redirect_to artists_path

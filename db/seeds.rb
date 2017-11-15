@@ -10,8 +10,8 @@
 Song.destroy_all
 Artist.destroy_all
 
-artist1 = Artist.create!( { name: "Teddy Afro", age: 41, nationality: "Ethiopian", image_url: "https://tinyurl.com/y8xm78ec" } )
-artist2 = Artist.create!( { name: "Tilahul Gesese", age: 68, nationality: "Ethiopian", image_url: "https://tinyurl.com/y76dzfby" } )
+artist1 = Artist.create!( { name: "Teddy Afro", age: 41, nationality: "Ethiopian", image_url: "https://tinyurl.com/y8y43wsr" } )
+artist2 = Artist.create!( { name: "Tilahul Gesese", age: 68, nationality: "Ethiopian", image_url: "https://tinyurl.com/yapkoo8o" } )
 
 
 song1 = Song.create!( { genre: "hip hop", song_name: "Mar eske tuaf", duration: "5 min", song_url: "https://www.youtube.com/watch?v=u2inQ1WeaFs", artist: artist1 } )

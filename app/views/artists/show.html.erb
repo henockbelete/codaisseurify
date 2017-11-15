@@ -12,7 +12,7 @@
 <% if @artist.songs.any? %>
   <ul>
     <% @artist.songs.each do |song| %>
-    <li><%= link_to song.song_name, :controller => :songs, :action => :show %></li>
+    <li><%=link_to song.song_name, :controller => :songs, :action => :show  %></li>
     <% end %>
   </ul>
 <% else %>
@@ -23,3 +23,6 @@
 
 <%= link_to "[New Song]", :controller => :songs, :action => :new %>
 <%= link_to "[Delete]", artist_path(@artist.id), method: :delete, data: { confirm: "Are you sure?" } %>
+
+
+<!-- link_to :controller => :songs, :action => :show -->
