@@ -1,7 +1,34 @@
-<h1> Ethiopian Artists</h1>
-<% @artists.each do |artist| %>
-<p><%= link_to artist.name, artist_path(artist) %></p>
-<% end %>
 
 
-<!-- #To be checked -->
+
+<div class="Artists index">
+  <h2>Ethiopian Artists</h2>
+
+
+  <%= link_to("Add New Artist", new_artist_path, :class => 'action new') %>
+
+  <table class="listing" summary="Artist list">
+    <tr class="header">
+
+      <th>Artist</th>
+      <th>Age</th>
+      <th>Nationality</th>
+
+      <th>Actions</th>
+    </tr>
+    <% @artists.each do |artist| %>
+    <tr>
+
+      <td><%= artist.name %></td>
+      <td><%= artist.age %></td>
+      <td><%= artist.nationality %></td>
+
+      <td class="actions">
+        <%= link_to("View Songs", songs_path(:artist_id => artist.id), :class => 'action show') %>
+        <%= link_to("Show", artist_path(artist), :class => 'action show') %>
+
+      </td>
+    </tr>
+    <% end %>
+  </table>
+</div>
