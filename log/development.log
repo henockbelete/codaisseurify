@@ -22639,3 +22639,1083 @@ ffer.append=  form_for @song :url => songs_path(:subject_id
                               ^):
   
 app/views/songs/new.html.erb:23: syntax error, unexpected ':', expecting keyword_end
+Started GET "/songs/new?artist_id=3" for 127.0.0.1 at 2017-11-18 23:20:55 +0100
+Processing by SongsController#new as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/new.html.erb within layouts/application
+  Rendered songs/new.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/new.html.erb:23: syntax error, unexpected ':', expecting keyword_end
+ffer.append=  form_for @song :url => songs_path(:subject_id 
+                              ^):
+  
+app/views/songs/new.html.erb:23: syntax error, unexpected ':', expecting keyword_end
+Started GET "/songs/new?artist_id=3" for 127.0.0.1 at 2017-11-18 23:21:40 +0100
+Processing by SongsController#new as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/new.html.erb within layouts/application
+  Rendered songs/new.html.erb within layouts/application (10.9ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: <% @song_title = "New song" %>
+    2: 
+    3:  <%= link_to "<< Back to List", songs_path(:subject_id => @subject.id), :class => 'back-link' %>
+    4: 
+    5:  <div class="songs new">
+    6:    <h2>Create song</h2>
+  
+app/views/songs/new.html.erb:3:in `_app_views_songs_new_html_erb___615113528754297359_70163035022080'
+Started GET "/songs/new?artist_id=3" for 127.0.0.1 at 2017-11-18 23:23:20 +0100
+Processing by SongsController#new as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/new.html.erb within layouts/application
+  Rendered songs/new.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/new.html.erb:20: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/songs/new.html.erb:20: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/songs?artist_id=3" for 127.0.0.1 at 2017-11-18 23:28:07 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered songs/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 33ms (Views: 29.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/songs/new?artist_id=3" for 127.0.0.1 at 2017-11-18 23:28:10 +0100
+Processing by SongsController#new as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/new.html.erb within layouts/application
+  Rendered songs/_form.html.erb (122.3ms)
+  Rendered songs/new.html.erb within layouts/application (124.5ms)
+Completed 500 Internal Server Error in 132ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `error_messages_for' for #<#<Class:0x007fa03741b598>:0x007fa0384ca1f0>):
+    1: <%= error_messages_for(f.object) %>
+    2: 
+    3: <table summary="Song form fields">
+    4:   <tr>
+  
+app/views/songs/_form.html.erb:1:in `_app_views_songs__form_html_erb__395574375854485232_70163057963600'
+app/views/songs/new.html.erb:10:in `block in _app_views_songs_new_html_erb___615113528754297359_70163058021900'
+app/views/songs/new.html.erb:8:in `_app_views_songs_new_html_erb___615113528754297359_70163058021900'
+Started GET "/songs/new?artist_id=3" for 127.0.0.1 at 2017-11-18 23:28:29 +0100
+Processing by SongsController#new as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/new.html.erb within layouts/application
+  Rendered songs/_form.html.erb (150.1ms)
+  Rendered songs/new.html.erb within layouts/application (152.5ms)
+Completed 500 Internal Server Error in 159ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `error_messages_for' for #<#<Class:0x007fa03741b598>:0x007fa0371b0c40>):
+    1: <!-- <%= error_messages_for(f.object) %> -->
+    2: 
+    3: <table summary="Song form fields">
+    4:   <tr>
+  
+app/views/songs/_form.html.erb:1:in `_app_views_songs__form_html_erb__395574375854485232_70163047896500'
+app/views/songs/new.html.erb:10:in `block in _app_views_songs_new_html_erb___615113528754297359_70163048010040'
+app/views/songs/new.html.erb:8:in `_app_views_songs_new_html_erb___615113528754297359_70163048010040'
+Started GET "/songs/new?artist_id=3" for 127.0.0.1 at 2017-11-18 23:28:43 +0100
+Processing by SongsController#new as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/new.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered songs/_form.html.erb (123.6ms)
+  Rendered songs/new.html.erb within layouts/application (125.6ms)
+Completed 500 Internal Server Error in 131ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `error_messages_for' for #<#<Class:0x007fa03741b598>:0x007fa0380f59d0>):
+    25: </table>
+    26: 
+    27: 
+    28: <!-- <%= error_messages_for(f.object) %> -->
+  
+app/views/songs/_form.html.erb:28:in `_app_views_songs__form_html_erb__395574375854485232_70163055963800'
+app/views/songs/new.html.erb:10:in `block in _app_views_songs_new_html_erb___615113528754297359_70163056014140'
+app/views/songs/new.html.erb:8:in `_app_views_songs_new_html_erb___615113528754297359_70163056014140'
+Started GET "/songs/new?artist_id=3" for 127.0.0.1 at 2017-11-18 23:28:53 +0100
+Processing by SongsController#new as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/new.html.erb within layouts/application
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered songs/_form.html.erb (3.8ms)
+  Rendered songs/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 38ms (Views: 34.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/songs?artist_id=3" for 127.0.0.1 at 2017-11-18 23:28:56 +0100
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OdUuO47kK+aBtW7acEZgWLC5miq3WZPc4iVgYl5N0+P3pCMkIWuP4seZAdYq6vdKIZXewSZXcK0qygYbDcdohw==", "song"=>{"song_name"=>"", "genre"=>"", "duration"=>"", "song_url"=>""}, "commit"=>"Create song", "artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  Rendering songs/new.html.erb within layouts/application
+  Rendered songs/_form.html.erb (1.0ms)
+  Rendered songs/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 36ms (Views: 29.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/songs?artist_id=3" for 127.0.0.1 at 2017-11-18 23:29:25 +0100
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ejfx+qpy8mPvHrUoWUlYt9mlj1puflrsDsZHp/0jOaPcRvzlBf1WZ6ky2iQD5c+lSInLsf9wuZ3GKSHerqmCxw==", "song"=>{"song_name"=>"Henock", "genre"=>"Belete", "duration"=>"Asfaw", "song_url"=>"https://www.youtube.com/?gl=NL"}, "commit"=>"Create song", "artist_id"=>"3"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (7.4ms)[0m  [1m[32mINSERT INTO "songs" ("genre", "song_name", "duration", "song_url", "created_at", "updated_at", "artist_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["genre", "Belete"], ["song_name", "Henock"], ["duration", "Asfaw"], ["song_url", "https://www.youtube.com/?gl=NL"], ["created_at", "2017-11-18 22:29:26.004028"], ["updated_at", "2017-11-18 22:29:26.004028"], ["artist_id", 3]]
+  [1m[35m (11.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/songs?artist_id=3
+Completed 302 Found in 28ms (ActiveRecord: 19.5ms)
+
+
+Started GET "/songs?artist_id=3" for 127.0.0.1 at 2017-11-18 23:29:26 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered songs/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 32ms (Views: 28.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/songs/new?artist_id=3" for 127.0.0.1 at 2017-11-18 23:31:12 +0100
+Processing by SongsController#new as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/new.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered songs/_form.html.erb (2.7ms)
+  Rendered songs/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 28ms (Views: 25.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs?artist_id=3" for 127.0.0.1 at 2017-11-18 23:31:18 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered songs/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 27ms (Views: 23.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/songs?artist_id=3" for 127.0.0.1 at 2017-11-18 23:31:57 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered songs/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 40ms (Views: 35.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/songs?artist_id=3" for 127.0.0.1 at 2017-11-18 23:31:59 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered songs/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 20ms (Views: 17.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/artists" for 127.0.0.1 at 2017-11-18 23:32:01 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs?artist_id=3" for 127.0.0.1 at 2017-11-18 23:32:04 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered songs/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 26ms (Views: 22.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs/6?artist_id=3" for 127.0.0.1 at 2017-11-18 23:32:07 +0100
+Processing by SongsController#show as HTML
+  Parameters: {"artist_id"=>"3", "id"=>"6"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 22ms (Views: 17.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/songs?artist_id=3" for 127.0.0.1 at 2017-11-18 23:32:09 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered songs/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 25ms (Views: 20.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs/9?artist_id=3" for 127.0.0.1 at 2017-11-18 23:32:12 +0100
+Processing by SongsController#show as HTML
+  Parameters: {"artist_id"=>"3", "id"=>"9"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 21ms (Views: 16.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs?artist_id=3" for 127.0.0.1 at 2017-11-18 23:32:17 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered songs/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 24ms (Views: 20.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/songs/5/edit?artist_id=3" for 127.0.0.1 at 2017-11-18 23:32:20 +0100
+Processing by SongsController#edit as HTML
+  Parameters: {"artist_id"=>"3", "id"=>"5"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 53ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionController::UnknownFormat (SongsController#edit is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/songs/new?artist_id=3" for 127.0.0.1 at 2017-11-18 23:32:35 +0100
+Processing by SongsController#new as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/new.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered songs/_form.html.erb (2.0ms)
+  Rendered songs/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 27ms (Views: 23.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs?artist_id=3" for 127.0.0.1 at 2017-11-18 23:32:52 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered songs/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 23ms (Views: 19.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs/new?artist_id=3" for 127.0.0.1 at 2017-11-18 23:32:58 +0100
+Processing by SongsController#new as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/new.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered songs/_form.html.erb (2.0ms)
+  Rendered songs/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 24ms (Views: 20.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs?artist_id=3" for 127.0.0.1 at 2017-11-18 23:33:00 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered songs/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 23ms (Views: 19.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs?artist_id=3" for 127.0.0.1 at 2017-11-18 23:33:30 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered songs/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/songs?artist_id=3" for 127.0.0.1 at 2017-11-18 23:33:34 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered songs/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 29ms (Views: 25.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs?artist_id=3" for 127.0.0.1 at 2017-11-18 23:33:40 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered songs/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 22ms (Views: 18.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs/new?artist_id=3" for 127.0.0.1 at 2017-11-18 23:33:42 +0100
+Processing by SongsController#new as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/new.html.erb within layouts/application
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered songs/_form.html.erb (2.1ms)
+  Rendered songs/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 24ms (Views: 20.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs?artist_id=3" for 127.0.0.1 at 2017-11-18 23:33:44 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered songs/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 22ms (Views: 18.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-18 23:33:46 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 24ms (Views: 21.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/songs?artist_id=3" for 127.0.0.1 at 2017-11-18 23:33:50 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered songs/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 24ms (Views: 20.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs/5?artist_id=3" for 127.0.0.1 at 2017-11-18 23:33:51 +0100
+Processing by SongsController#show as HTML
+  Parameters: {"artist_id"=>"3", "id"=>"5"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 32ms (Views: 18.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs?artist_id=3" for 127.0.0.1 at 2017-11-18 23:33:53 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered songs/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 23ms (Views: 19.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs/5/edit?artist_id=3" for 127.0.0.1 at 2017-11-18 23:33:55 +0100
+Processing by SongsController#edit as HTML
+  Parameters: {"artist_id"=>"3", "id"=>"5"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 46ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionController::UnknownFormat (SongsController#edit is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/songs/9?artist_id=3" for 127.0.0.1 at 2017-11-18 23:34:01 +0100
+Processing by SongsController#show as HTML
+  Parameters: {"artist_id"=>"3", "id"=>"9"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 21ms (Views: 16.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/songs?artist_id=3" for 127.0.0.1 at 2017-11-18 23:34:04 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered songs/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 23ms (Views: 19.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-18 23:34:06 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artists/3" for 127.0.0.1 at 2017-11-18 23:34:08 +0100
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 20ms (Views: 16.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artists" for 127.0.0.1 at 2017-11-18 23:34:14 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artists/4" for 127.0.0.1 at 2017-11-18 23:34:16 +0100
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 25ms (Views: 21.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/artists" for 127.0.0.1 at 2017-11-18 23:34:19 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 32ms (Views: 29.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/songs?artist_id=3" for 127.0.0.1 at 2017-11-18 23:34:21 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered songs/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 26ms (Views: 22.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs/5?artist_id=3" for 127.0.0.1 at 2017-11-18 23:34:22 +0100
+Processing by SongsController#show as HTML
+  Parameters: {"artist_id"=>"3", "id"=>"5"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 21ms (Views: 16.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs?artist_id=3" for 127.0.0.1 at 2017-11-18 23:34:25 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered songs/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 22ms (Views: 18.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-18 23:34:27 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artists/3" for 127.0.0.1 at 2017-11-18 23:34:29 +0100
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 21ms (Views: 17.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/artists" for 127.0.0.1 at 2017-11-18 23:34:40 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/songs?artist_id=3" for 127.0.0.1 at 2017-11-18 23:34:46 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered songs/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 25ms (Views: 21.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/artists" for 127.0.0.1 at 2017-11-18 23:34:52 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/songs?artist_id=4" for 127.0.0.1 at 2017-11-18 23:34:54 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"4"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 4]]
+  Rendered songs/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 22ms (Views: 17.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs/7?artist_id=4" for 127.0.0.1 at 2017-11-18 23:34:57 +0100
+Processing by SongsController#show as HTML
+  Parameters: {"artist_id"=>"4", "id"=>"7"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 23ms (Views: 18.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs?artist_id=4" for 127.0.0.1 at 2017-11-18 23:34:58 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"4"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 4]]
+  Rendered songs/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 33ms (Views: 29.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs/8?artist_id=4" for 127.0.0.1 at 2017-11-18 23:35:00 +0100
+Processing by SongsController#show as HTML
+  Parameters: {"artist_id"=>"4", "id"=>"8"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 22ms (Views: 17.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs?artist_id=4" for 127.0.0.1 at 2017-11-18 23:35:01 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"4"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 4]]
+  Rendered songs/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 22ms (Views: 18.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs/7/edit?artist_id=4" for 127.0.0.1 at 2017-11-18 23:35:05 +0100
+Processing by SongsController#edit as HTML
+  Parameters: {"artist_id"=>"4", "id"=>"7"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 51ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionController::UnknownFormat (SongsController#edit is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/songs/new?artist_id=4" for 127.0.0.1 at 2017-11-18 23:35:11 +0100
+Processing by SongsController#new as HTML
+  Parameters: {"artist_id"=>"4"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/new.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered songs/_form.html.erb (3.1ms)
+  Rendered songs/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 27ms (Views: 23.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/songs?artist_id=4" for 127.0.0.1 at 2017-11-18 23:35:20 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"4"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 4]]
+  Rendered songs/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 23ms (Views: 19.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/artists" for 127.0.0.1 at 2017-11-18 23:35:22 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artists/3" for 127.0.0.1 at 2017-11-18 23:36:10 +0100
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-18 23:36:15 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 25ms (Views: 22.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/songs?artist_id=4" for 127.0.0.1 at 2017-11-18 23:36:18 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"4"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 4]]
+  Rendered songs/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 37ms (Views: 33.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs/7?artist_id=4" for 127.0.0.1 at 2017-11-18 23:36:24 +0100
+Processing by SongsController#show as HTML
+  Parameters: {"artist_id"=>"4", "id"=>"7"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 20ms (Views: 15.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs?artist_id=4" for 127.0.0.1 at 2017-11-18 23:37:03 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"4"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 4]]
+  Rendered songs/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 25ms (Views: 21.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-18 23:37:09 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/songs?artist_id=3" for 127.0.0.1 at 2017-11-18 23:37:10 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered songs/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 24ms (Views: 20.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/songs?artist_id=3" for 127.0.0.1 at 2017-11-18 23:39:11 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered songs/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 40ms (Views: 35.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/artists" for 127.0.0.1 at 2017-11-18 23:39:28 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/songs?artist_id=3" for 127.0.0.1 at 2017-11-18 23:39:30 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered songs/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 22ms (Views: 18.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs/5?artist_id=3" for 127.0.0.1 at 2017-11-18 23:39:32 +0100
+Processing by SongsController#show as HTML
+  Parameters: {"artist_id"=>"3", "id"=>"5"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 21ms (Views: 17.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs?artist_id=3" for 127.0.0.1 at 2017-11-18 23:39:34 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered songs/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/artists" for 127.0.0.1 at 2017-11-18 23:39:35 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/artists/new" for 127.0.0.1 at 2017-11-18 23:39:37 +0100
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for ArtistsController):
+  
+actionpack (5.1.4) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/artists/3" for 127.0.0.1 at 2017-11-18 23:39:42 +0100
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 15.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/artists" for 127.0.0.1 at 2017-11-18 23:39:45 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/songs?artist_id=3" for 127.0.0.1 at 2017-11-18 23:39:53 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered songs/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 24ms (Views: 20.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs/new?artist_id=3" for 127.0.0.1 at 2017-11-18 23:39:55 +0100
+Processing by SongsController#new as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/new.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered songs/_form.html.erb (4.0ms)
+  Rendered songs/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 27ms (Views: 22.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs?artist_id=3" for 127.0.0.1 at 2017-11-18 23:39:58 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered songs/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 24ms (Views: 20.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/artists" for 127.0.0.1 at 2017-11-18 23:39:59 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.3ms)
+
+
