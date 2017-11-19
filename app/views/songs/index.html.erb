@@ -23,8 +23,9 @@
       <td><%= song.genre %></td>
       <td class="actions">
         <%= link_to("Show", song_path(song, :artist_id => @artist.id), :class => 'action show') %>
-        <%= link_to("Edit", edit_song_path(song, :artist_id => @artist.id), :class => 'action edit') %>
-
+        <!-- <%= link_to("Edit", edit_song_path(song, :artist_id => @artist.id), :class => 'action edit') %> -->
+        <!-- <%= link_to("Delete", song_path(song, :artist_id => @artist.id), :class => 'action delete') %> -->
+        <%= link_to "Delete", song_path(song, :artist_id => @artist.id), method: :delete, data: { confirm: "Are you sure?" } %>
       </td>
     </tr>
     <% end %>

@@ -40,9 +40,9 @@ class SongsController < ApplicationController
       end
     end
 
-    def delete
-      @song = Song.find(params[:id])
-    end
+    # def delete
+    #   @song = Song.find(params[:id])
+    # end
 
     def destroy
       @song = Song.find(params[:id])
