@@ -27841,3 +27841,264 @@ gs(:artist_id => @artist.id) );@output_buffer.safe_append='
   
 app/views/songs/index.html.erb:23: syntax error, unexpected '(', expecting ')'
 app/views/songs/index.html.erb:23: syntax error, unexpected ')', expecting keyword_end
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 18:01:54 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.9ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/index.html.erb within layouts/application (18.5ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.9ms)
+
+
+  
+SyntaxError (/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:32: syntax error, unexpected '(', expecting ')'
+buffer.append=( render @songs(:artist_id => @artist.id) );@o
+                              ^
+/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:32: syntax error, unexpected ')', expecting keyword_end
+gs(:artist_id => @artist.id) );@output_buffer.safe_append='
+                              ^):
+  
+app/views/songs/index.html.erb:32: syntax error, unexpected '(', expecting ')'
+app/views/songs/index.html.erb:32: syntax error, unexpected ')', expecting keyword_end
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 18:02:23 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.6ms)
+
+
+  
+SyntaxError (/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:22: syntax error, unexpected '(', expecting ')'
+buffer.append=( render @songs(:artist_id => @artist.id) );@o
+                              ^
+/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:22: syntax error, unexpected ')', expecting keyword_end
+gs(:artist_id => @artist.id) );@output_buffer.safe_append='
+                              ^):
+  
+app/views/songs/index.html.erb:22: syntax error, unexpected '(', expecting ')'
+app/views/songs/index.html.erb:22: syntax error, unexpected ')', expecting keyword_end
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 18:02:28 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/index.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:22: syntax error, unexpected '(', expecting ')'
+buffer.append=( render @songs(:artist_id => @artist.id) );@o
+                              ^
+/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:22: syntax error, unexpected ')', expecting keyword_end
+gs(:artist_id => @artist.id) );@output_buffer.safe_append='
+                              ^):
+  
+app/views/songs/index.html.erb:22: syntax error, unexpected '(', expecting ')'
+app/views/songs/index.html.erb:22: syntax error, unexpected ')', expecting keyword_end
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 18:02:41 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:32: syntax error, unexpected '(', expecting ')'
+buffer.append=( render @songs(:artist_id => @artist.id) );@o
+                              ^
+/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:32: syntax error, unexpected ')', expecting keyword_end
+gs(:artist_id => @artist.id) );@output_buffer.safe_append='
+                              ^):
+  
+app/views/songs/index.html.erb:32: syntax error, unexpected '(', expecting ')'
+app/views/songs/index.html.erb:32: syntax error, unexpected ')', expecting keyword_end
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 18:03:01 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.4ms)
+
+
+  
+SyntaxError (/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:32: syntax error, unexpected '(', expecting ')'
+buffer.append=( render @songs(:artist_id => @artist.id) );@o
+                              ^
+/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:32: syntax error, unexpected ')', expecting keyword_end
+gs(:artist_id => @artist.id) );@output_buffer.safe_append='
+                              ^):
+  
+app/views/songs/index.html.erb:32: syntax error, unexpected '(', expecting ')'
+app/views/songs/index.html.erb:32: syntax error, unexpected ')', expecting keyword_end
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 18:03:20 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/_form.html.erb (5.3ms)
+  Rendered songs/_form.html.erb (0.7ms)
+  Rendered songs/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 71ms (Views: 67.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 18:04:17 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/_form.html.erb (1.1ms)
+  Rendered songs/_form.html.erb (0.7ms)
+  Rendered songs/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 37ms (Views: 33.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/songs" for 127.0.0.1 at 2017-11-19 18:04:26 +0100
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u6J2riBYb7+deQTrj9URFmGiOtzp61Aj6FZvlZ48FuZ103uxj9fLu9tVa+fVeYYE8I5+N3jls1IguQnszbatgg==", "song"=>{"song_name"=>"sdfsfsad"}}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=):
+  
+app/controllers/songs_controller.rb:81:in `find_artist'
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 18:04:35 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/_form.html.erb (1.2ms)
+  Rendered songs/_form.html.erb (0.7ms)
+  Rendered songs/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 25ms (Views: 21.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 18:04:37 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/_form.html.erb (1.2ms)
+  Rendered songs/_form.html.erb (0.5ms)
+  Rendered songs/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artists/1" for 127.0.0.1 at 2017-11-19 18:04:41 +0100
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 28ms (Views: 24.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/artists" for 127.0.0.1 at 2017-11-19 18:04:43 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (12.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 51ms (Views: 35.2ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 18:04:45 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/_form.html.erb (1.2ms)
+  Rendered songs/_form.html.erb (0.5ms)
+  Rendered songs/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 28ms (Views: 24.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/songs" for 127.0.0.1 at 2017-11-19 18:04:52 +0100
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E4BP6GtmNI+WqUvoeds7fXaDojnQwUbPXBXeMqQoYp7d8UL3xOmQi9CFJOQjd6xv56/m0kHPpb6U+rhL96LZ+g==", "song"=>{"song_name"=>"henock"}}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=):
+  
+app/controllers/songs_controller.rb:81:in `find_artist'
+Started GET "/" for 127.0.0.1 at 2017-11-19 18:05:46 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 46ms (Views: 43.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 18:05:48 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/_form.html.erb (1.7ms)
+  Rendered songs/_form.html.erb (0.6ms)
+  Rendered songs/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 31ms (Views: 26.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-19 18:05:56 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 23ms (Views: 19.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 18:05:59 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/_form.html.erb (1.7ms)
+  Rendered songs/_form.html.erb (0.7ms)
+  Rendered songs/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 33ms (Views: 29.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/artists/1" for 127.0.0.1 at 2017-11-19 18:06:03 +0100
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 24ms (Views: 21.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/artists" for 127.0.0.1 at 2017-11-19 18:06:04 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/artists/2" for 127.0.0.1 at 2017-11-19 18:06:06 +0100
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 23ms (Views: 19.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/artists" for 127.0.0.1 at 2017-11-19 18:06:09 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 26ms (Views: 23.4ms | ActiveRecord: 0.4ms)
+
+
