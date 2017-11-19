@@ -13,13 +13,33 @@
     <%= render "form", song: @song %>
 
     <hr />
+    <table class="table table-striped" id="songList">
+          <%= render "form", song: @song %>
+        </table>
 
-  </div>
+        <div class="footer">
+          Song: <span id="todo-count">1</span> •
+          Done: <span id="completed-count">0</span> •
+          Total: <span id="total-count">1</span> •
+          <a href="#" id="clean-up">Clean up</a>
+        </div>
+
 </div>
 
 
 <!-- <%= link_to("<< Back to Artists", artists_path, :class => 'back-link') %>
+<table class="table table-striped" id="Songs List">
+      <%= render @songs(:artist_id => @artist.id) %>
+    </table>
 
+    <div class="footer">
+      Song: <span id="todo-count">1</span> •
+      Done: <span id="completed-count">0</span> •
+      Total: <span id="total-count">1</span> •
+      <a href="#" id="clean-up">Clean up</a>
+    </div>
+
+</div>
 <div class="Songs index">
   <h2>Songs</h2>
 

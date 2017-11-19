@@ -27127,3 +27127,717 @@ Completed 404 Not Found in 4ms (ActiveRecord: 0.4ms)
 ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=):
   
 app/controllers/songs_controller.rb:81:in `find_artist'
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 16:50:13 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (1.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/_form.html.erb (9.4ms)
+  Rendered songs/index.html.erb within layouts/application (28.9ms)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error ('nil' is not an ActiveModel-compatible object. It must implement :to_partial_path.):
+    15:     <hr />
+    16: 
+    17:     <table class="table table-striped" id="Songs List">
+    18:           <%= render @todos %>
+    19:         </table>
+    20: 
+    21:         <div class="footer">
+  
+app/views/songs/index.html.erb:18:in `_app_views_songs_index_html_erb___3729160344229642318_70361403632540'
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 16:51:00 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/index.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.6ms)
+
+
+  
+SyntaxError (/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:18: syntax error, unexpected '(', expecting ')'
+buffer.append=( render @songs(:artist_id => @artist.id) );@o
+                              ^
+/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:18: syntax error, unexpected ')', expecting keyword_end
+gs(:artist_id => @artist.id) );@output_buffer.safe_append='
+                              ^):
+  
+app/views/songs/index.html.erb:18: syntax error, unexpected '(', expecting ')'
+app/views/songs/index.html.erb:18: syntax error, unexpected ')', expecting keyword_end
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 16:51:25 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.5ms)
+
+
+  
+SyntaxError (/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:18: syntax error, unexpected =>, expecting ')'
+ render @songs, (:artist_id => @artist.id) );@output_buffer.
+                              ^):
+  
+app/views/songs/index.html.erb:18: syntax error, unexpected =>, expecting ')'
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 16:51:50 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.6ms)
+
+
+  
+SyntaxError (/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:18: syntax error, unexpected =>, expecting ')'
+ render @songs, (:artist_id => @artist.id) );@output_buffer.
+                              ^):
+  
+app/views/songs/index.html.erb:18: syntax error, unexpected =>, expecting ')'
+Started GET "/artists/1" for 127.0.0.1 at 2017-11-19 16:51:54 +0100
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/config
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/images
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/javascripts
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/stylesheets
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/Henyhydro/Documents/codaisseurify2/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:     <%= javascript_include_tag 'application' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__3776909580631065107_70361432198600'
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 16:52:28 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/_form.html.erb (1.3ms)
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/config
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/images
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/javascripts
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/stylesheets
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/Henyhydro/Documents/codaisseurify2/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:     <%= javascript_include_tag 'application' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__3776909580631065107_70361429825420'
+Started GET "/songs?artist_id=2" for 127.0.0.1 at 2017-11-19 16:52:34 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"2"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/_form.html.erb (1.1ms)
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 2]]
+  Rendered songs/index.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/config
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/images
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/javascripts
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/stylesheets
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/Henyhydro/Documents/codaisseurify2/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:     <%= javascript_include_tag 'application' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__3776909580631065107_70361414017340'
+Started GET "/artists/1" for 127.0.0.1 at 2017-11-19 16:52:38 +0100
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/config
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/images
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/javascripts
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/stylesheets
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/Henyhydro/Documents/codaisseurify2/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:     <%= javascript_include_tag 'application' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__3776909580631065107_70361430858760'
+Started GET "/" for 127.0.0.1 at 2017-11-19 16:55:04 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (1.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (14.8ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/config
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/images
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/javascripts
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/stylesheets
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/Henyhydro/Documents/codaisseurify2/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:     <%= javascript_include_tag 'application' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__3776909580631065107_70361431191560'
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 16:56:59 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (1.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/_form.html.erb (2.5ms)
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 69ms (Views: 60.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 16:57:05 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/_form.html.erb (2.3ms)
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 30ms (Views: 25.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/artists/1" for 127.0.0.1 at 2017-11-19 16:57:08 +0100
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 22ms (Views: 18.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artists" for 127.0.0.1 at 2017-11-19 17:02:34 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (1.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (24.4ms)
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/config
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/images
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/javascripts
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/stylesheets
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/Henyhydro/Documents/codaisseurify2/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:     <%= javascript_include_tag 'application' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__3776909580631065107_70361377241340'
+Started GET "/artists" for 127.0.0.1 at 2017-11-19 17:03:21 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/config
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/images
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/javascripts
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/stylesheets
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/Henyhydro/Documents/codaisseurify2/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:     <%= javascript_include_tag 'application' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__3776909580631065107_70361418006120'
+Started GET "/artists" for 127.0.0.1 at 2017-11-19 17:03:39 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 39ms (Views: 36.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 17:11:54 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/index.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:23: syntax error, unexpected =>, expecting ')'
+ render @songs, (:artist_id => @artist.id) );@output_buffer.
+                              ^):
+  
+app/views/songs/index.html.erb:23: syntax error, unexpected =>, expecting ')'
+Started GET "/artists/1" for 127.0.0.1 at 2017-11-19 17:12:02 +0100
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (1.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/config
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/images
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/javascripts
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/stylesheets
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/Henyhydro/Documents/codaisseurify2/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:     <%= javascript_include_tag 'application' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__3776909580631065107_70361403767860'
+Started GET "/artists" for 127.0.0.1 at 2017-11-19 17:12:20 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/config
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/images
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/javascripts
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/stylesheets
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/Henyhydro/Documents/codaisseurify2/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:     <%= javascript_include_tag 'application' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__3776909580631065107_70361429481300'
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 17:18:02 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/index.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:23: syntax error, unexpected =>, expecting ')'
+ render @songs, (:artist_id => @artist.id) );@output_buffer.
+                              ^):
+  
+app/views/songs/index.html.erb:23: syntax error, unexpected =>, expecting ')'
+Started GET "/" for 127.0.0.1 at 2017-11-19 17:19:28 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (35.3ms)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 22.9ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/config
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/images
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/javascripts
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/stylesheets
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/Henyhydro/Documents/codaisseurify2/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:     <%= javascript_include_tag 'application' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__3776909580631065107_70361440817780'
+Started GET "/" for 127.0.0.1 at 2017-11-19 17:19:31 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/config
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/images
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/javascripts
+  /Users/Henyhydro/Documents/codaisseurify2/app/assets/stylesheets
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/Henyhydro/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/Henyhydro/Documents/codaisseurify2/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+     8:     <%= javascript_include_tag 'application' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__3776909580631065107_70361420012120'
+Started GET "/" for 127.0.0.1 at 2017-11-19 17:19:45 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 73ms (Views: 70.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 17:19:48 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 15.2ms)
+
+
+  
+SyntaxError (/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:23: syntax error, unexpected =>, expecting ')'
+ render @songs, (:artist_id => @artist.id) );@output_buffer.
+                              ^):
+  
+app/views/songs/index.html.erb:23: syntax error, unexpected =>, expecting ')'
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 17:21:05 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.4ms)
+
+
+  
+SyntaxError (/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:23: syntax error, unexpected =>, expecting ')'
+ render @songs, (:artist_id => @artist.id) );@output_buffer.
+                              ^):
+  
+app/views/songs/index.html.erb:23: syntax error, unexpected =>, expecting ')'
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 17:21:07 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:23: syntax error, unexpected =>, expecting ')'
+ render @songs, (:artist_id => @artist.id) );@output_buffer.
+                              ^):
+  
+app/views/songs/index.html.erb:23: syntax error, unexpected =>, expecting ')'
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 17:21:07 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/index.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:23: syntax error, unexpected =>, expecting ')'
+ render @songs, (:artist_id => @artist.id) );@output_buffer.
+                              ^):
+  
+app/views/songs/index.html.erb:23: syntax error, unexpected =>, expecting ')'
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 17:21:08 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:23: syntax error, unexpected =>, expecting ')'
+ render @songs, (:artist_id => @artist.id) );@output_buffer.
+                              ^):
+  
+app/views/songs/index.html.erb:23: syntax error, unexpected =>, expecting ')'
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 17:21:08 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:23: syntax error, unexpected =>, expecting ')'
+ render @songs, (:artist_id => @artist.id) );@output_buffer.
+                              ^):
+  
+app/views/songs/index.html.erb:23: syntax error, unexpected =>, expecting ')'
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 17:21:53 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:17: syntax error, unexpected '(', expecting ')'
+buffer.append=( render @songs(:artist_id => @artist.id) );@o
+                              ^
+/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:17: syntax error, unexpected ')', expecting keyword_end
+gs(:artist_id => @artist.id) );@output_buffer.safe_append='
+                              ^
+/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:32: syntax error, unexpected '(', expecting ')'
+buffer.append=( render @songs(:artist_id => @artist.id) );@o
+                              ^
+/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:32: syntax error, unexpected ')', expecting keyword_end
+gs(:artist_id => @artist.id) );@output_buffer.safe_append='
+                              ^):
+  
+app/views/songs/index.html.erb:17: syntax error, unexpected '(', expecting ')'
+app/views/songs/index.html.erb:17: syntax error, unexpected ')', expecting keyword_end
+app/views/songs/index.html.erb:32: syntax error, unexpected '(', expecting ')'
+app/views/songs/index.html.erb:32: syntax error, unexpected ')', expecting keyword_end
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 17:22:20 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/index.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:17: syntax error, unexpected '(', expecting ')'
+uffer.append=( (render @songs(:artist_id => @artist.id)) );@
+                              ^
+/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:17: syntax error, unexpected ')', expecting keyword_end
+s(:artist_id => @artist.id)) );@output_buffer.safe_append='
+                              ^
+/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:32: syntax error, unexpected '(', expecting ')'
+buffer.append=( render @songs(:artist_id => @artist.id) );@o
+                              ^
+/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:32: syntax error, unexpected ')', expecting keyword_end
+gs(:artist_id => @artist.id) );@output_buffer.safe_append='
+                              ^):
+  
+app/views/songs/index.html.erb:17: syntax error, unexpected '(', expecting ')'
+app/views/songs/index.html.erb:17: syntax error, unexpected ')', expecting keyword_end
+app/views/songs/index.html.erb:32: syntax error, unexpected '(', expecting ')'
+app/views/songs/index.html.erb:32: syntax error, unexpected ')', expecting keyword_end
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 17:22:45 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:32: syntax error, unexpected '(', expecting ')'
+buffer.append=( render @songs(:artist_id => @artist.id) );@o
+                              ^
+/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:32: syntax error, unexpected ')', expecting keyword_end
+gs(:artist_id => @artist.id) );@output_buffer.safe_append='
+                              ^):
+  
+app/views/songs/index.html.erb:32: syntax error, unexpected '(', expecting ')'
+app/views/songs/index.html.erb:32: syntax error, unexpected ')', expecting keyword_end
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 17:23:10 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:32: syntax error, unexpected '(', expecting ')'
+buffer.append=( render @songs(:artist_id => @artist.id) );@o
+                              ^
+/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:32: syntax error, unexpected ')', expecting keyword_end
+gs(:artist_id => @artist.id) );@output_buffer.safe_append='
+                              ^):
+  
+app/views/songs/index.html.erb:32: syntax error, unexpected '(', expecting ')'
+app/views/songs/index.html.erb:32: syntax error, unexpected ')', expecting keyword_end
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 17:23:18 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:32: syntax error, unexpected '(', expecting ')'
+buffer.append=( render @songs(:artist_id => @artist.id) );@o
+                              ^
+/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:32: syntax error, unexpected ')', expecting keyword_end
+gs(:artist_id => @artist.id) );@output_buffer.safe_append='
+                              ^):
+  
+app/views/songs/index.html.erb:32: syntax error, unexpected '(', expecting ')'
+app/views/songs/index.html.erb:32: syntax error, unexpected ')', expecting keyword_end
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 17:23:42 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:23: syntax error, unexpected '(', expecting ')'
+buffer.append=( render @songs(:artist_id => @artist.id) );@o
+                              ^
+/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:23: syntax error, unexpected ')', expecting keyword_end
+gs(:artist_id => @artist.id) );@output_buffer.safe_append='
+                              ^):
+  
+app/views/songs/index.html.erb:23: syntax error, unexpected '(', expecting ')'
+app/views/songs/index.html.erb:23: syntax error, unexpected ')', expecting keyword_end
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 17:23:47 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:23: syntax error, unexpected '(', expecting ')'
+buffer.append=( render @songs(:artist_id => @artist.id) );@o
+                              ^
+/Users/Henyhydro/Documents/codaisseurify2/app/views/songs/index.html.erb:23: syntax error, unexpected ')', expecting keyword_end
+gs(:artist_id => @artist.id) );@output_buffer.safe_append='
+                              ^):
+  
+app/views/songs/index.html.erb:23: syntax error, unexpected '(', expecting ')'
+app/views/songs/index.html.erb:23: syntax error, unexpected ')', expecting keyword_end
