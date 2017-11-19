@@ -26953,3 +26953,177 @@ Processing by SongsController#index as HTML
 Completed 200 OK in 50ms (Views: 47.0ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-11-19 16:13:58 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 49ms (Views: 45.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 16:13:59 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/_form.html.erb (1.6ms)
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 29ms (Views: 25.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/songs?artist_id=2" for 127.0.0.1 at 2017-11-19 16:14:03 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"2"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/_form.html.erb (1.1ms)
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 2]]
+  Rendered songs/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 33ms (Views: 29.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 16:14:07 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/_form.html.erb (1.9ms)
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 34ms (Views: 30.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 16:22:31 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/_form.html.erb (3.0ms)
+  [1m[36mSong Load (0.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 77ms (Views: 67.9ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/songs" for 127.0.0.1 at 2017-11-19 16:22:35 +0100
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cPE/2HKracwcmdxacslIsFZpt3ZbNvmAMo5TBue84My+gDLH3STNyFq1s1YoZd+ix0Xznco4GvH6YTV/tDZbqA==", "song"=>{"song_name"=>"henock"}}
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=):
+  
+app/controllers/songs_controller.rb:66:in `find_artist'
+Started POST "/songs" for 127.0.0.1 at 2017-11-19 16:22:44 +0100
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cPE/2HKracwcmdxacslIsFZpt3ZbNvmAMo5TBue84My+gDLH3STNyFq1s1YoZd+ix0Xznco4GvH6YTV/tDZbqA==", "song"=>{"song_name"=>"henock"}}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=):
+  
+app/controllers/songs_controller.rb:66:in `find_artist'
+Started POST "/songs" for 127.0.0.1 at 2017-11-19 16:27:15 +0100
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cPE/2HKracwcmdxacslIsFZpt3ZbNvmAMo5TBue84My+gDLH3STNyFq1s1YoZd+ix0Xznco4GvH6YTV/tDZbqA==", "song"=>{"song_name"=>"henock"}}
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 23ms (ActiveRecord: 9.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=):
+  
+app/controllers/songs_controller.rb:81:in `find_artist'
+Started POST "/songs" for 127.0.0.1 at 2017-11-19 16:27:46 +0100
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cPE/2HKracwcmdxacslIsFZpt3ZbNvmAMo5TBue84My+gDLH3STNyFq1s1YoZd+ix0Xznco4GvH6YTV/tDZbqA==", "song"=>{"song_name"=>"henock"}}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 8ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=):
+  
+app/controllers/songs_controller.rb:81:in `find_artist'
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 16:30:00 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/_form.html.erb (1.9ms)
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 88ms (Views: 43.2ms | ActiveRecord: 9.3ms)
+
+
+Started POST "/songs" for 127.0.0.1 at 2017-11-19 16:30:09 +0100
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yjr9Cl5XRE27yu2/V85t7N4PVPYmtFglsJ79AwZM+EQES/AV8djgSf3mgrMNYvr+TyMQHbe6u1R4cZt6VcZDIA==", "song"=>{"song_name"=>"henock"}}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=):
+  
+app/controllers/songs_controller.rb:81:in `find_artist'
+Started POST "/songs" for 127.0.0.1 at 2017-11-19 16:30:30 +0100
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yjr9Cl5XRE27yu2/V85t7N4PVPYmtFglsJ79AwZM+EQES/AV8djgSf3mgrMNYvr+TyMQHbe6u1R4cZt6VcZDIA==", "song"=>{"song_name"=>"henock"}}
+  [1m[35m (23.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 703ms (ActiveRecord: 38.0ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/songs_controller.rb:27:in `block (2 levels) in create'
+app/controllers/songs_controller.rb:22:in `create'
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 16:30:37 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `songs' for nil:NilClass):
+  
+app/controllers/songs_controller.rb:6:in `index'
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 16:31:02 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  Rendered songs/_form.html.erb (1.5ms)
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 73ms (Views: 43.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/songs" for 127.0.0.1 at 2017-11-19 16:31:06 +0100
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8+ClZV62R6JtQSsf2/9OYalXIDTcwkXxitOOaZBU9l09kah68TnjpittRBOBU9lzOHtk303MpoBCPOgQw95NOQ==", "song"=>{"song_name"=>"henock"}}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=):
+  
+app/controllers/songs_controller.rb:81:in `find_artist'
+Started POST "/songs" for 127.0.0.1 at 2017-11-19 16:32:13 +0100
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8+ClZV62R6JtQSsf2/9OYalXIDTcwkXxitOOaZBU9l09kah68TnjpittRBOBU9lzOHtk303MpoBCPOgQw95NOQ==", "song"=>{"song_name"=>"henock"}}
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=):
+  
+app/controllers/songs_controller.rb:81:in `find_artist'

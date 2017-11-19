@@ -17,15 +17,30 @@ class SongsController < ApplicationController
     end
 
     def create
-      @song = Song.new(song_params)
-      @song.artist = @artist
-      if @song.save
-        flash[:notice] = "Song created successfully."
-        redirect_to(songs_path(:artist_id => @artist.id))
-      else
-        render('new')
+        @song = Song.new(song_params)
+        @song.artist = @artist
+        respond_to do |format|
+          if @song.save
+            format.html { redirect_to songs_path(:artist_id => @artist.id), notice: 'Song was successfully created.' }
+            format.json { render :show, status: :created, location: @song }
+          else
+            format.html { redirect_to songs_path(:artist_id => @artist.id)}
+            format.json { render json: @song.errors, status: :unprocessable_entity }
+          end
+        end
       end
-    end
+
+    #
+    # def create
+    #   @song = Song.new(song_params)
+    #   @song.artist = @artist
+    #   if @song.save
+    #     flash[:notice] = "Song created successfully."
+    #     redirect_to(songs_path(:artist_id => @artist.id))
+    #   else
+    #     render('new')
+    #   end
+    # end
 
     def edit
       @song = Song.find(params[:id])
