@@ -10,6 +10,7 @@ class ArtistsController < ApplicationController
 
   def show
     @artist = Artist.find(params[:id])
+    # @song = Song.new(:artist_id => @artist.id) (may be this should be done now)
 
   end
 

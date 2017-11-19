@@ -1,25 +1,12 @@
 
+<%= form_for(song) do |f| %>
+  <div class="form-group <%= song.errors.any? ? 'has-error' : '' %>" id="formgroup-title">
+    <%= f.text_field :song_name, placeholder: "Here you could write down your favorite songs of the artist", class: 'form-control' %>
 
-<table summary="Song form fields">
-  <tr>
-    <th>Name</th>
-    <td><%= f.text_field(:song_name) %></td>
-  </tr>
-  <tr>
-    <th>Genre</th>
-    <td><%= f.text_field(:genre) %></td>
-  </tr>
-  <tr>
-    <th>Song Duration</th>
-    <td><%= f.text_field(:duration) %></td>
-  </tr>
-  <tr>
-    <th>Song Link</th>
-    <td><%= f.text_field(:song_url) %></td>
-  </tr>
-  <tr>
-    <th>Artist</th>
-    <td><%= f.object.artist.name %></td>
-  </tr>
-
-</table>
+    <% if song.errors.any? %>
+      <% song.errors.full_messages.each do |message| %>
+        <span class="help-block"><%= message %></span>
+      <% end %>
+    <% end %>
+  </div>
+<% end %>

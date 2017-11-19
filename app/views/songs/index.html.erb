@@ -1,6 +1,24 @@
 
 
-<%= link_to("<< Back to Artists", artists_path, :class => 'back-link') %>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <h1 class="page-header">Song List</h1>
+
+    <% if notice.present? %>
+      <div class="alert alert-info" role="alert">
+        <%= notice %>
+      </div>
+    <% end %>
+
+    <%= render "form", song: @song %>
+
+    <hr />
+
+  </div>
+</div>
+
+
+<!-- <%= link_to("<< Back to Artists", artists_path, :class => 'back-link') %>
 
 <div class="Songs index">
   <h2>Songs</h2>
@@ -22,12 +40,12 @@
       <td><%= song.song_name %></td>
       <td><%= song.genre %></td>
       <td class="actions">
-        <%= link_to("Show", song_path(song, :artist_id => @artist.id), :class => 'action show') %>
+        <%= link_to("Show", song_path(song, :artist_id => @artist.id), :class => 'action show') %> -->
         <!-- <%= link_to("Edit", edit_song_path(song, :artist_id => @artist.id), :class => 'action edit') %> -->
         <!-- <%= link_to("Delete", song_path(song, :artist_id => @artist.id), :class => 'action delete') %> -->
-        <%= link_to "Delete", song_path(song, :artist_id => @artist.id), method: :delete, data: { confirm: "Are you sure?" } %>
+        <!-- <%= link_to "Delete", song_path(song, :artist_id => @artist.id), method: :delete, data: { confirm: "Are you sure?" } %>
       </td>
     </tr>
     <% end %>
   </table>
-</div>
+</div> -->
