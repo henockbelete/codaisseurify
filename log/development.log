@@ -25771,3 +25771,373 @@ Processing by ArtistsController#show as JSON
 Completed 200 OK in 11ms (Views: 7.6ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/artists/1.json" for 127.0.0.1 at 2017-11-19 14:22:25 +0100
+Processing by ArtistsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (18.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.json.jbuilder
+  Rendered artists/_artist.json.jbuilder (8.4ms)
+  Rendered artists/show.json.jbuilder (12.2ms)
+Completed 500 Internal Server Error in 199ms (ActiveRecord: 115.4ms)
+
+
+  
+ActionView::Template::Error (Failed to add "url" property to an array):
+     7:     json.(song, :id, :song_name, :genre, :duration)
+     8:   end
+     9: end
+    10: json.url artist_url(artist, format: :json)
+    11: # json.array! @songs, as: :song
+    12: #
+    13: # json.extract! song, :id, :song_name, :genre, :duration
+  
+app/views/artists/_artist.json.jbuilder:10:in `_app_views_artists__artist_json_jbuilder___1133317657068558660_70361418033680'
+app/views/artists/show.json.jbuilder:1:in `_app_views_artists_show_json_jbuilder___2498088655612671046_70361418135420'
+Started GET "/artists/1.json" for 127.0.0.1 at 2017-11-19 14:24:15 +0100
+Processing by ArtistsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.9ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.json.jbuilder
+  Rendered artists/_artist.json.jbuilder (372.6ms)
+  Rendered artists/show.json.jbuilder (375.6ms)
+Completed 500 Internal Server Error in 387ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `v' for #<#<Class:0x007ffc96aadb20>:0x007ffc96d82418>):
+    15: 
+    16: 
+    17: 
+    18: v
+  
+app/views/artists/_artist.json.jbuilder:18:in `_app_views_artists__artist_json_jbuilder___1133317657068558660_70361413856260'
+app/views/artists/show.json.jbuilder:1:in `_app_views_artists_show_json_jbuilder___2498088655612671046_70361419618240'
+Started GET "/artists/1.json" for 127.0.0.1 at 2017-11-19 14:24:23 +0100
+Processing by ArtistsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.json.jbuilder
+  Rendered artists/_artist.json.jbuilder (0.8ms)
+  Rendered artists/show.json.jbuilder (3.3ms)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/artists/" for 127.0.0.1 at 2017-11-19 14:24:28 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (23.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 145ms (Views: 118.9ms | ActiveRecord: 23.2ms)
+
+
+Started GET "/songs?artist_id=1" for 127.0.0.1 at 2017-11-19 14:24:39 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 65ms (Views: 44.4ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/artists" for 127.0.0.1 at 2017-11-19 14:24:42 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (9.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 38ms (Views: 26.6ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/artists/1" for 127.0.0.1 at 2017-11-19 14:24:44 +0100
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 25ms (Views: 19.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/artists" for 127.0.0.1 at 2017-11-19 14:24:45 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 23ms (Views: 20.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/artists.json" for 127.0.0.1 at 2017-11-19 14:24:53 +0100
+Processing by ArtistsController#index as JSON
+  Rendering artists/index.json.jbuilder
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/_artist.json.jbuilder (0.8ms)
+  Rendered artists/_artist.json.jbuilder (0.4ms)
+  Rendered artists/index.json.jbuilder (5.1ms)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs?artist_id=2" for 127.0.0.1 at 2017-11-19 14:25:00 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"2"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 2]]
+  Rendered songs/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 38ms (Views: 33.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/songs/4?artist_id=2" for 127.0.0.1 at 2017-11-19 14:25:04 +0100
+Processing by SongsController#show as HTML
+  Parameters: {"artist_id"=>"2", "id"=>"4"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 25ms (Views: 19.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/songs?artist_id=2" for 127.0.0.1 at 2017-11-19 14:25:06 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"2"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 2]]
+  Rendered songs/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 27ms (Views: 23.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/artists" for 127.0.0.1 at 2017-11-19 14:25:10 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artists/new" for 127.0.0.1 at 2017-11-19 14:25:13 +0100
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for ArtistsController):
+  
+actionpack (5.1.4) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/artists/2" for 127.0.0.1 at 2017-11-19 14:25:17 +0100
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 25ms (Views: 21.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artists" for 127.0.0.1 at 2017-11-19 14:25:20 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/songs?artist_id=2" for 127.0.0.1 at 2017-11-19 14:25:22 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"2"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 2]]
+  Rendered songs/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 25ms (Views: 20.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/songs/new?artist_id=2" for 127.0.0.1 at 2017-11-19 14:25:25 +0100
+Processing by SongsController#new as HTML
+  Parameters: {"artist_id"=>"2"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/new.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered songs/_form.html.erb (4.3ms)
+  Rendered songs/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 33ms (Views: 29.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs?artist_id=2" for 127.0.0.1 at 2017-11-19 14:25:28 +0100
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"2"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 2]]
+  Rendered songs/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 25ms (Views: 21.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-19 14:28:00 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 52ms (Views: 48.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs.json" for 127.0.0.1 at 2017-11-19 14:28:07 +0100
+Processing by SongsController#index as JSON
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=):
+  
+app/controllers/songs_controller.rb:65:in `find_artist'
+Started GET "/songs.json" for 127.0.0.1 at 2017-11-19 14:34:24 +0100
+Processing by SongsController#index as JSON
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=):
+  
+app/controllers/songs_controller.rb:65:in `find_artist'
+Started GET "/songs.json" for 127.0.0.1 at 2017-11-19 14:34:32 +0100
+Processing by SongsController#index as JSON
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=):
+  
+app/controllers/songs_controller.rb:65:in `find_artist'
+Started GET "/songs.json" for 127.0.0.1 at 2017-11-19 14:34:33 +0100
+Processing by SongsController#index as JSON
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=):
+  
+app/controllers/songs_controller.rb:65:in `find_artist'
+Started GET "/artists.json" for 127.0.0.1 at 2017-11-19 14:34:44 +0100
+Processing by ArtistsController#index as JSON
+  Rendering artists/index.json.jbuilder
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/_artist.json.jbuilder (0.9ms)
+  Rendered artists/_artist.json.jbuilder (0.3ms)
+  Rendered artists/index.json.jbuilder (5.1ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/songs.json" for 127.0.0.1 at 2017-11-19 14:34:52 +0100
+Processing by SongsController#index as JSON
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=):
+  
+app/controllers/songs_controller.rb:65:in `find_artist'
+Started GET "/songs.json" for 127.0.0.1 at 2017-11-19 14:49:27 +0100
+Processing by SongsController#index as JSON
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=):
+  
+app/controllers/songs_controller.rb:65:in `find_artist'
+Started GET "/songs.json" for 127.0.0.1 at 2017-11-19 14:49:29 +0100
+Processing by SongsController#index as JSON
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Artist with 'id'=):
+  
+app/controllers/songs_controller.rb:65:in `find_artist'
+Started GET "/artists" for 127.0.0.1 at 2017-11-19 14:49:36 +0100
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 34ms (Views: 31.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/artists.json" for 127.0.0.1 at 2017-11-19 14:49:42 +0100
+Processing by ArtistsController#index as JSON
+  Rendering artists/index.json.jbuilder
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  Rendered artists/index.json.jbuilder (3.7ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error ({:partial=>"artists/artist", :as=>:artist} is not a symbol nor a string):
+    3: 
+    4: # app/views/artists/index.json.jbuilder
+    5: json.artists @artists do |artist|
+    6:   json.(artist, partial: 'artists/artist', as: :artist)
+    7:   json.songs artist.songs, partial: 'songs/song', as: :song
+    8: end
+  
+app/views/artists/index.json.jbuilder:6:in `block in _app_views_artists_index_json_jbuilder___2986310489049634322_70361376840260'
+app/views/artists/index.json.jbuilder:5:in `_app_views_artists_index_json_jbuilder___2986310489049634322_70361376840260'
+Started GET "/artists.json" for 127.0.0.1 at 2017-11-19 14:52:02 +0100
+Processing by ArtistsController#index as JSON
+  Rendering artists/index.json.jbuilder
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY "artists"."name" ASC[0m
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered songs/_song.json.jbuilder (0.5ms)
+  Rendered songs/_song.json.jbuilder (0.1ms)
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 2]]
+  Rendered songs/_song.json.jbuilder (0.1ms)
+  Rendered artists/index.json.jbuilder (8.8ms)
+Completed 200 OK in 17ms (Views: 13.4ms | ActiveRecord: 0.9ms)
+
+
