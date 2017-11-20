@@ -1,27 +1,43 @@
 
+<div class="Songs index">
+<h2>Songs</h2>
+<div class="align-image">
+  <div class="panel-heading">
+    <%= link_to("Add New Song", new_song_path(:artist_id => @artist.id), :class => 'action new') %>
+  </div>
+  <div class ="panel-body">
+  <table id="songlist">
+    <% @songs.each do |song| %>
+    <tr>
+        <td><%= song.song_name%></td>
+        <td><%= song.genre%></td>
+        <td>
+          <%= button_tag "Delete", class: "btn btn-default", id: "deleteSongButton", onclick: 'deleteSong(' + song.artist.id.to_s + ', ' + song.id.to_s + ')' %>
+        </td>
+        <td class="actions">
+          <%= link_to("Show", song_path(song, :artist_id => @artist.id), :class => 'action show') %>
+          <%= link_to("Edit", edit_song_path(song, :artist_id => @artist.id), :class => 'action edit') %>
+        </td>
+    </tr>
+      <%end%>
+  </table>
+  <div>
+    <%= link_to "Delete All Songs", song_path(:artist_id => @artist.id), class: "btn btn-danger", method: :delete, data: { confirm: "Are you sure?" } %>
+  </div>
+  <div class="fsongoup">
+    <label>Song Name:</label>
+    <input id="songnameInput" type="text" class="form-control" placeholder="Song Name">
 
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <h1 class="page-header">Song List</h1>
-
-    <% if notice.present? %>
-      <div class="alert alert-info" role="alert">
-        <%= notice %>
-      </div>
-    <% end %>
-
-    <%= render "form", song: @song %>
-
-    <hr />
-    <table class="table table-striped" id="songList">
-          <%= render "form", song: @song %>
-        </table>
-
-        <div class="footer">
-          Song: <span id="todo-count">1</span> •
-          Done: <span id="completed-count">0</span> •
-          Total: <span id="total-count">1</span> •
-          <a href="#" id="clean-up">Clean up</a>
-        </div>
-
+    <div class="form-group">
+      <label>Genre:</label>
+      <input id="genreInput" type="text" class="form-control" placeholder="eg. 03:40">
+    </div>
+  <hr>
+    <div class="actions">
+      <%= button_tag "Save Song", class: "btn btn-danger", id: "saveSongButton", onclick: 'addSong(' + @artist.id.to_s + ')' %>
+   </div>
+  </div>
+    <%= link_to "Back to Artists", artists_path, class: "btn btn-default" %>
+  </div>
+</div>
 </div>

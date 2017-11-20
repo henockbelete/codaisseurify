@@ -2,14 +2,29 @@ class SongsController < ApplicationController
 
     before_action :find_artist
 
+    # def index
+    #   @songs = @artist.songs
+    #   @song = Song.new(:artist_id => @artist.id)
+    # end
+    #
+    # def show
+    #   @song = Song.find(params[:id])
+    # end
+
+
     def index
-      @songs = @artist.songs
-      @song = Song.new(:artist_id => @artist.id)
+         @song = Song.new
+         @songs =@artist.songs
+
+       format.html { redirect_to songs_path(:artist_id => @artist.id) }
+       format.json { render :index, status: :list, location: @artist.id }
+
     end
 
     def show
       @song = Song.find(params[:id])
-
+      format.html { redirect_to songs_path(:artist_id => @artist.id) }
+      format.json { render :show, status: :list, location: @artist.id }
     end
 
     def new
@@ -30,41 +45,13 @@ class SongsController < ApplicationController
         end
       end
 
-    #
-    # def create
-    #   @song = Song.new(song_params)
-    #   @song.artist = @artist
-    #   if @song.save
-    #     flash[:notice] = "Song created successfully."
-    #     redirect_to(songs_path(:artist_id => @artist.id))
-    #   else
-    #     render('new')
-    #   end
-    # end
-
-    def edit
-      @song = Song.find(params[:id])
-    end
-
-    def update
-      @song = Song.find(params[:id])
-      if @song.update_attributes(song_params)
-        flash[:notice] = "song updated successfully."
-        redirect_to(song_path(@song, :artist_id => @artist.id))
-      else
-        render('edit')
-      end
-    end
-
-    # def delete
-    #   @song = Song.find(params[:id])
-    # end
 
     def destroy
       @song = Song.find(params[:id])
       @song.destroy
-      flash[:notice] = "Song destroyed successfully."
-      redirect_to(songs_path(:artist_id => @artist.id))
+      format.html { redirect_to songs_path(:artist_id => @artist.id), notice: 'Song was successfully deleted.' }
+      format.json { render :delete, status: :deleted, location: @song }
+
     end
 
     private
